@@ -1,4 +1,4 @@
-save_idxsinitialize{uType}(integrator,cache::OrdinaryDiffEqCache,::Type{uType}) =
+save_idxsinitialize(integrator,cache::OrdinaryDiffEqCache,::Type{uType}) where {uType} =
                 error("This algorithm does not have an initialization function")
 
 function loopheader!(integrator)
